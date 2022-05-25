@@ -30,6 +30,11 @@ body {
     opacity: 0.8;
 }
 
+.game-won {
+    background-color: green;
+    opacity: 0.8;
+}
+
 .red {
     background-color: red;
     border-radius: 0 100% 0 0;

@@ -76,10 +76,22 @@ function checkAnswer(currentLevel) {
         //If the user got the most recent answer right in previous if statement, then check that they have finished their sequence.
         if (userClickedPattern.length === gamePattern.length) {
 
-            //Call nextSequence() after a 1000 millisecond delay.
-            setTimeout(function() {
-                nextSequence();
-            }, 1000);
+            if (level === 20) {
+                $("body").addClass("game-won");
+                setTimeout(function() {
+                    $("body").removeClass("game-won");
+                }, 200);
+
+                $("#level-title").text("Game Won! Press Any Key to Restart");
+
+                startOver();
+
+            } else {
+                //Call nextSequence() after a 1000 millisecond delay.
+                setTimeout(function() {
+                    nextSequence();
+                }, 1000);
+            }
 
         }
 
