@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+    background-color: #011F3F;
+}
+
+#level-title {
+    font-family: 'Play', sans-serif;
+    font-size: 3rem;
+    margin: 5%;
+    color: #FEF2BF;
+}
+
+.container {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.btn {
+    margin: 10px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 10px solid grey;
+    border-radius: 20%;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.red {
+    background-color: red;
+    border-radius: 0 100% 0 0;
+}
+
+.green {
+    background-color: green;
+    border-radius: 100% 0 0 0;
+}
+
+.blue {
+    background-color: blue;
+    border-radius: 0 0 100% 0;
+}
+
+.yellow {
+    background-color: yellow;
+    border-radius: 0 0 0 100%;
+}
+
+.pressed {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px white;
+}
